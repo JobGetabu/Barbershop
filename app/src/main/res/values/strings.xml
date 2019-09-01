@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Barbershop</string>
+    <string name="first_name">First Name *</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_address">Email Address *</string>
+    <string name="mobile_number">Mobile Number *</string>
+    <string name="address">Address</string>
+    <string name="booking_note">Booking Note</string>
+    <string name="login_to_shedule">Login to Schedule</string>
 </resources>
