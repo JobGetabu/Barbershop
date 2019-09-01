@@ -5,17 +5,15 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class SelectServiceActivity : AppCompatActivity() {
 
     companion object {
         fun newIntent(context: Context): Intent =
-            Intent(context, MainActivity::class.java)
+            Intent(context, SelectServiceActivity::class.java)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        startActivity(SelectServiceActivity.newIntent(this))
+        setContentView(R.layout.activity_select_service)
     }
 }
