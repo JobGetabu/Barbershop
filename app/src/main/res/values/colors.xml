@@ -6,4 +6,14 @@
 
     <color name="background_color">#ECECEC</color>
     <color name="white">#FFFFFF</color>
+
+    <color name="contentDividerLine">#e0e0e0</color>
+
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+
+    <color name="background_view">#EFF3F6</color>
 </resources>

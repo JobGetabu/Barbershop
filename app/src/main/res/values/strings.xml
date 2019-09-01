@@ -7,4 +7,5 @@
     <string name="address">Address</string>
     <string name="booking_note">Booking Note</string>
     <string name="login_to_shedule">Login to Schedule</string>
+    <string name="cut_summary">Thank for booking your appointment with \nThe Cut, Dedan Kimathi, Nyeri</string>
 </resources>
