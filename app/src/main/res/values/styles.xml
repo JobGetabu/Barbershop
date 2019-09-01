@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="BaseTheme">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -33,8 +33,8 @@
 
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:fitsSystemWindows">true</item>
         <item name="android:background">@drawable/bar_splash</item>
+        <item name="android:fitsSystemWindows">true</item>
         <!--Fullscreen settings-->
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
