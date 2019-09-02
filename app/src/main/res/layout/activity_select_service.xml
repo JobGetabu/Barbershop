@@ -167,7 +167,7 @@
                         android:drawableStart="@drawable/ic_date"
                         android:drawableTint="@color/grey_60"
                         android:drawablePadding="16dp"
-                        android:hint="Select Date"/>
+                        android:hint="@string/select_date"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -204,7 +204,7 @@
                         android:drawableStart="@drawable/ic_time"
                         android:drawableTint="@color/grey_60"
                         android:drawablePadding="16dp"
-                        android:hint="Select Time"/>
+                        android:hint="@string/select_time"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <RadioGroup
