@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.job.barbershop.payment.ShoppingCheckoutStep
 import com.job.barbershop.util.Tools
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog
 import com.wdullaer.materialdatetimepicker.time.TimePickerDialog
@@ -23,6 +24,9 @@ class SelectServiceActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_select_service)
 
+        next.setOnClickListener {
+            toCheckOut()
+        }
     }
 
     fun showCalenderPicker(v: View){
@@ -65,5 +69,9 @@ class SelectServiceActivity : AppCompatActivity() {
         datePicker.isThemeDark = true
         datePicker.accentColor = resources.getColor(R.color.colorPrimary)
         datePicker.show(fragmentManager, "Timepickerdialog")
+    }
+
+    fun toCheckOut(){
+        startActivity(Intent(this,ShoppingCheckoutStep::class.java))
     }
 }
