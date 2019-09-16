@@ -10,4 +10,5 @@
     <string name="cut_summary">Thank for booking your appointment with \nThe Cut, Dedan Kimathi, Nyeri</string>
     <string name="select_time">Select Time</string>
     <string name="select_date">Select Date</string>
+    <string name="def_cd">def</string>
 </resources>

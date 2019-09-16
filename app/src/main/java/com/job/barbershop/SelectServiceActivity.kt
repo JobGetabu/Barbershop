@@ -3,6 +3,7 @@ package com.job.barbershop
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.job.barbershop.util.Tools
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog
@@ -22,17 +23,9 @@ class SelectServiceActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_select_service)
 
-        date.setOnClickListener {
-            showCalenderPicker()
-        }
-
-        date.setOnClickListener {
-            showDatePicker()
-        }
-
     }
 
-    fun showCalenderPicker(){
+    fun showCalenderPicker(v: View){
 
         val cur_calender = Calendar.getInstance()
         val datePicker = DatePickerDialog.newInstance(
@@ -59,7 +52,7 @@ class SelectServiceActivity : AppCompatActivity() {
     }
 
 
-    fun showDatePicker(){
+    fun showDatePicker(v: View){
         val cur_calender = Calendar.getInstance()
         val datePicker = TimePickerDialog.newInstance({ _, hourOfDay, minute, second ->
 
