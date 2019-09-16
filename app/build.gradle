@@ -67,4 +67,7 @@ dependencies {
 
     // date & time picker
     implementation 'com.wdullaer:materialdatetimepicker:3.2.0'
+
+    //ripple
+    implementation 'com.balysv:material-ripple:1.0.2'
 }
