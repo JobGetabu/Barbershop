@@ -1,4 +1,4 @@
-package com.job.barbershop.util.payment
+package com.job.barbershop.payment
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

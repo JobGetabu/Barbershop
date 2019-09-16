@@ -12,11 +12,11 @@
             android:roundIcon="@mipmap/ic_launcher"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".util.payment.PayDoneActivity">
+        <activity android:name=".payment.PayDoneActivity">
         </activity>
-        <activity android:name=".util.payment.CardDetailsActivity">
+        <activity android:name=".payment.CardDetailsActivity">
         </activity>
-        <activity android:name=".util.payment.PayWithCardActivity">
+        <activity android:name=".payment.PayWithCardActivity">
         </activity>
         <activity android:name=".SelectServiceActivity">
         </activity>

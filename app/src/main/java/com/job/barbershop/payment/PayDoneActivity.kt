@@ -1,13 +1,13 @@
-package com.job.barbershop.util.payment
+package com.job.barbershop.payment
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.job.barbershop.R
 
-class PayWithCardActivity : AppCompatActivity() {
+class PayDoneActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pay_with_card)
+        setContentView(R.layout.activity_pay_done)
     }
 }
