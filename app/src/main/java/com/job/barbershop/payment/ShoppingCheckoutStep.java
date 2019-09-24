@@ -59,19 +59,18 @@ public class ShoppingCheckoutStep extends AppCompatActivity {
         image_payment.setColorFilter(getResources().getColor(R.color.grey_10), PorterDuff.Mode.SRC_ATOP);
         image_confirm.setColorFilter(getResources().getColor(R.color.grey_10), PorterDuff.Mode.SRC_ATOP);
 
-        (findViewById(R.id.lyt_next)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (idx_state == array_state.length - 1) return;
-                idx_state++;
-                displayFragment(array_state[idx_state]);
-
-                if(idx_state == 3){
-                    startActivity(new Intent(ShoppingCheckoutStep.this, BookingDetailsActivity.class));
-                    finish();
-                }
-
+        (findViewById(R.id.lyt_next)).setOnClickListener(v -> {
+            if((idx_state + 1 ) == array_state.length){
+                startActivity(new Intent(ShoppingCheckoutStep.this, BookingDetailsActivity.class));
+                finish();
+                return;
             }
+
+            if (idx_state == array_state.length - 1) return;
+            idx_state++;
+            displayFragment(array_state[idx_state]);
+
+
         });
 
         (findViewById(R.id.lyt_previous)).setOnClickListener(v -> {
