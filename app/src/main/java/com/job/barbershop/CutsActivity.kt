@@ -5,17 +5,15 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class CutsActivity : AppCompatActivity() {
 
     companion object {
         fun newIntent(context: Context): Intent =
-            Intent(context, MainActivity::class.java)
+            Intent(context, CutsActivity::class.java)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        startActivity(ChooseLocationActivity.newIntent(this))
+        setContentView(R.layout.activity_cuts)
     }
 }

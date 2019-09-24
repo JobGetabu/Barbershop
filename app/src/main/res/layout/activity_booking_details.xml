@@ -181,6 +181,7 @@
             android:background="@drawable/btn_rounded_default"
             android:padding="16dp"
             android:text="Book Another Appointment"
+            android:onClick="toHome"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="16sp"

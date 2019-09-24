@@ -1,5 +1,6 @@
 package com.job.barbershop.payment;
 
+import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import com.job.barbershop.BookingDetailsActivity;
 import com.job.barbershop.R;
 import com.job.barbershop.payment.fragments.FragmentConfirmation;
 import com.job.barbershop.payment.fragments.FragmentPayment;
@@ -63,16 +65,19 @@ public class ShoppingCheckoutStep extends AppCompatActivity {
                 if (idx_state == array_state.length - 1) return;
                 idx_state++;
                 displayFragment(array_state[idx_state]);
+
+                if(idx_state == 3){
+                    startActivity(new Intent(ShoppingCheckoutStep.this, BookingDetailsActivity.class));
+                    finish();
+                }
+
             }
         });
 
-        (findViewById(R.id.lyt_previous)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (idx_state < 1) return;
-                idx_state--;
-                displayFragment(array_state[idx_state]);
-            }
+        (findViewById(R.id.lyt_previous)).setOnClickListener(v -> {
+            if (idx_state < 1) return;
+            idx_state--;
+            displayFragment(array_state[idx_state]);
         });
     }
 

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,7 +27,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="SHIPPING TO:"
+                    android:text="ADDRESS TO:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                     android:textColor="@color/grey_40"
                     app:fontFamily="sans-serif-medium" />
@@ -45,7 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_middle"
-                android:text="Laura Michelle"
+                tools:text="Lawrence Wamuo"
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                 android:textColor="@color/grey_90"
                 app:fontFamily="sans-serif-medium" />
@@ -53,7 +54,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1144 Central, Newport Kentucky, US 41071"
+                android:text="Tamaal, RM 8, Dedan Kimathi"
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                 android:textColor="@color/grey_90"
                 app:fontFamily="sans-serif-medium" />
@@ -86,6 +87,7 @@
                     app:fontFamily="sans-serif-medium" />
 
                 <TextView
+                        android:id="@+id/edit_pay"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Edit"
@@ -99,7 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_middle"
-                android:text="XXXX - XXXX - XXXX - 1195"
+                android:text="4242 - 4242 - 4242 - 4242"
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                 android:textColor="@color/grey_90"
                 app:fontFamily="sans-serif-medium" />
@@ -126,7 +128,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="PRODUCT ORDER:"
+                    android:text="SERVICES:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                     android:textColor="@color/grey_40"
                     app:fontFamily="sans-serif-medium" />
@@ -157,7 +159,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:scaleType="centerCrop"
-                        app:srcCompat="@drawable/image_shop_2" />
+                        app:srcCompat="@drawable/im1" />
 
                     <View
                         android:layout_width="@dimen/spacing_middle"
@@ -178,7 +180,7 @@
                                 android:id="@+id/textView"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Coup Hoodie Jacket"
+                                android:text="Hair Smooth Cut"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                                 android:textColor="@color/grey_90"
                                 app:fontFamily="sans-serif-medium" />
@@ -187,7 +189,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/spacing_medium"
-                                android:text="Size : M   Qty : 1"
+                                android:text="Hair Size : M  "
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="@color/grey_40" />
 
@@ -196,7 +198,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="$89.00"
+                            android:text="Ksh 200.00"
                             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                             android:textColor="@color/grey_90" />
 
@@ -222,7 +224,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:scaleType="centerCrop"
-                        app:srcCompat="@drawable/image_shop_2" />
+                        app:srcCompat="@drawable/im2" />
 
                     <View
                         android:layout_width="@dimen/spacing_middle"
@@ -242,7 +244,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Qonnoq Checked Blouse"
+                                android:text="Mustache Cut Base"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                                 android:textColor="@color/grey_90"
                                 app:fontFamily="sans-serif-medium" />
@@ -251,7 +253,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/spacing_medium"
-                                android:text="Size : L   Qty : 1"
+                                android:text="Hair Size : L"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="@color/grey_40" />
 
@@ -260,7 +262,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="$34.50"
+                            android:text="Ksh 500.00"
                             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                             android:textColor="@color/grey_90" />
 
@@ -286,7 +288,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DELIVERY PRODUCT:"
+                android:text="SERVICE TIMELINE:"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="@color/grey_40"
                 app:fontFamily="sans-serif-medium" />
@@ -310,7 +312,7 @@
                     android:layout_marginLeft="@dimen/spacing_middle"
                     android:layout_marginStart="@dimen/spacing_middle"
                     android:layout_weight="1"
-                    android:text="Regular (12 Days)"
+                    android:text="Regular (~3 Hours)"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/grey_40"
                     app:fontFamily="sans-serif-medium" />
@@ -320,7 +322,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/spacing_middle"
                     android:layout_marginStart="@dimen/spacing_middle"
-                    android:text="+$11"
+                    android:text="+Ksh10"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/grey_40"
                     app:fontFamily="sans-serif-black" />
@@ -345,7 +347,7 @@
                     android:layout_marginLeft="@dimen/spacing_middle"
                     android:layout_marginStart="@dimen/spacing_middle"
                     android:layout_weight="1"
-                    android:text="Express (7 Days)"
+                    android:text="Express (~1 Hour)"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/grey_90"
                     app:fontFamily="sans-serif-medium" />
@@ -355,7 +357,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/spacing_middle"
                     android:layout_marginStart="@dimen/spacing_middle"
-                    android:text="+$20"
+                    android:text="+Ksh20"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/grey_90"
                     app:fontFamily="sans-serif-black" />
@@ -381,7 +383,7 @@
                     android:layout_marginLeft="@dimen/spacing_middle"
                     android:layout_marginStart="@dimen/spacing_middle"
                     android:layout_weight="1"
-                    android:text="Priority (4 Days)"
+                    android:text="Priority (~30 Minutes)"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/grey_40"
                     app:fontFamily="sans-serif-medium" />
@@ -391,7 +393,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/spacing_middle"
                     android:layout_marginStart="@dimen/spacing_middle"
-                    android:text="+$32"
+                    android:text="+Ksh50"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/grey_40"
                     app:fontFamily="sans-serif-black" />
@@ -415,7 +417,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Product Cost"
+                android:text="Subtotal Cost"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="@color/grey_40"
                 app:fontFamily="sans-serif-medium" />
@@ -423,7 +425,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$123.50"
+                android:text="Ksh800.00"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/grey_90"
                 app:fontFamily="sans-serif-medium" />
@@ -453,7 +455,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$143.50"
+                android:text="Ksh820.50"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/grey_90"
                 app:fontFamily="sans-serif-black" />

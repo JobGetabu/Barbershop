@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,10 +53,10 @@
                 android:layout_marginTop="@dimen/spacing_middle"
                 android:background="@drawable/edit_text_round_bg_outline"
                 android:hint="Card Number"
+                android:inputType="number"
                 android:minHeight="@dimen/spacing_xmlarge"
                 android:drawableEnd="@drawable/ic_credit_card_grey"
-                android:drawableRight="@drawable/ic_credit_card_grey"
-                android:text="88543 - 7043 - 2461 - 1195" />
+                android:drawableRight="@drawable/ic_credit_card_grey" />
 
             <EditText
                 style="@style/EditText.Flat.Grey"
@@ -67,7 +68,7 @@
                 android:minHeight="@dimen/spacing_xmlarge"
                 android:drawableEnd="@drawable/ic_person_grey"
                 android:drawableRight="@drawable/ic_person_grey"
-                android:text="Laura Michelle" />
+                tools:text="Laura Michelle" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -83,9 +84,9 @@
                     android:drawableEnd="@drawable/ic_event_grey"
                     android:drawableRight="@drawable/ic_event_grey"
                     android:background="@drawable/edit_text_round_bg_outline"
-                    android:hint="Expired Date"
+                    android:hint="Expired Date (10/20)"
                     android:minHeight="@dimen/spacing_xmlarge"
-                    android:text="10/20" />
+                    tools:text="10/20" />
 
                 <View
                     android:layout_width="@dimen/spacing_middle"
@@ -99,7 +100,7 @@
                     android:background="@drawable/edit_text_round_bg_outline"
                     android:hint="CVV"
                     android:minHeight="@dimen/spacing_xmlarge"
-                    android:text="132" />
+                    tools:text="132" />
 
             </LinearLayout>
 

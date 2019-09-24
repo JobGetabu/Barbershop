@@ -74,4 +74,8 @@ class SelectServiceActivity : AppCompatActivity() {
     fun toCheckOut(){
         startActivity(Intent(this,ShoppingCheckoutStep::class.java))
     }
+
+    fun toLocation(v:View){
+        startActivity(Intent(this,ChooseLocationActivity::class.java))
+    }
 }

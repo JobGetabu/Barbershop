@@ -3,7 +3,8 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +29,7 @@
                 android:background="@drawable/edit_text_round_bg_outline"
                 android:hint="Name"
                 android:minHeight="@dimen/spacing_xmlarge"
-                android:text="Laura Michelle"/>
+                tools:text="Laura Michelle"/>
 
         <EditText
                 style="@style/EditText.Flat.Grey"
@@ -38,7 +39,7 @@
                 android:background="@drawable/edit_text_round_bg_outline"
                 android:hint="Email"
                 android:minHeight="@dimen/spacing_xmlarge"
-                android:text="laura.michelle@mail.com"/>
+                tools:text="laura.michelle@mail.com"/>
 
         <EditText
                 style="@style/EditText.Flat.Grey"
@@ -48,13 +49,13 @@
                 android:background="@drawable/edit_text_round_bg_outline"
                 android:hint="Phone"
                 android:minHeight="@dimen/spacing_xmlarge"
-                android:text="(859) 261-0876"/>
+                tools:text="(859) 261-0876"/>
 
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_large"
-                android:text="SHIPPING ADDRESS"
+                android:text="PHYSICAL ADDRESS"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="@color/grey_40"
                 app:fontFamily="sans-serif-medium"/>
@@ -67,7 +68,7 @@
                 android:background="@drawable/edit_text_round_bg_outline"
                 android:hint="Address"
                 android:minHeight="@dimen/spacing_xmlarge"
-                android:text="1144 Central"/>
+                tools:text="1144 Central"/>
 
         <LinearLayout
                 android:layout_width="match_parent"
@@ -81,8 +82,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/edit_text_round_bg_outline"
-                    android:hint="Country"
-                    android:text="United State"
+                    android:hint="County"
+                    android:text="Nyeri"
                     android:drawableEnd="@drawable/ic_expand_arrow"
                     android:drawableRight="@drawable/ic_expand_arrow"
                     android:minHeight="@dimen/spacing_xmlarge"/>
@@ -90,16 +91,6 @@
             <View
                     android:layout_width="@dimen/spacing_middle"
                     android:layout_height="0dp"/>
-
-            <EditText
-                    style="@style/EditText.Flat.Grey"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/edit_text_round_bg_outline"
-                    android:hint="ZIP Code"
-                    android:text="41071"
-                    android:minHeight="@dimen/spacing_xmlarge"/>
 
         </LinearLayout>
 
@@ -111,8 +102,7 @@
                 android:drawableEnd="@drawable/ic_expand_arrow"
                 android:drawableRight="@drawable/ic_expand_arrow"
                 android:background="@drawable/edit_text_round_bg_outline"
-                android:hint="City"
-                android:text="Newport"
+                android:hint="Street"
                 android:minHeight="@dimen/spacing_xmlarge"/>
 
         <EditText
@@ -123,8 +113,7 @@
                 android:drawableEnd="@drawable/ic_expand_arrow"
                 android:drawableRight="@drawable/ic_expand_arrow"
                 android:background="@drawable/edit_text_round_bg_outline"
-                android:hint="State / Province"
-                android:text="Kentucky"
+                android:hint="House No"
                 android:minHeight="@dimen/spacing_xmlarge"/>
 
     </LinearLayout>
