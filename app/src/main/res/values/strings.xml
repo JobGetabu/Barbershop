@@ -12,4 +12,6 @@
     <string name="select_date">Select Date</string>
     <string name="def_cd">def</string>
     <string name="NEXT">NEXT</string>
+    <string name="dot">\u2022</string>
+
 </resources>
