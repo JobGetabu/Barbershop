@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rotate
+    android:drawable="@drawable/ic_arrow_right"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="90"/>
