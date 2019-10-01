@@ -13,7 +13,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/background_color">
+        android:background="@color/colorPrimary">
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -21,7 +21,7 @@
             android:layout_height="0dp"
             android:layout_marginStart="16dp"
             android:background="@android:color/transparent"
-            android:tint="@android:color/black"
+            android:tint="@android:color/white"
             app:layout_constraintBottom_toBottomOf="@+id/textView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -35,7 +35,7 @@
             android:padding="16dp"
             android:text="SUMMARY"
             android:textAlignment="center"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/white"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -46,12 +46,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
 
         android:id="@+id/topview"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/topview">
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
 
         <ImageView
             android:id="@+id/imageView"
