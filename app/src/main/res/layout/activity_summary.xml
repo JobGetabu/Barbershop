@@ -419,7 +419,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Ksh 1,000"
+                                    android:text="Free"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                     android:textColor="@color/colorPrimary" />
 
@@ -511,7 +511,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ksh 1700"
+                    android:text="Ksh 700"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
@@ -530,6 +530,7 @@
                 android:background="@color/colorPrimary"
                 android:paddingLeft="@dimen/spacing_mlarge"
                 android:paddingRight="@dimen/spacing_mlarge"
+                android:onClick="toCheckout"
                 android:text="CONTINUE"
                 android:textColor="@android:color/white" />
 
