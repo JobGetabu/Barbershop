@@ -39,6 +39,11 @@ android {
         sourceCompatibility = '1.8'
         targetCompatibility = '1.8'
     }
+
+    // Add for using latest experimental build of Android Extensions
+    androidExtensions {
+        experimental = true
+    }
 }
 
 dependencies {

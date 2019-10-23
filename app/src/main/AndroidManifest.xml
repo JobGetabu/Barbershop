@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.job.barbershop">
+        package="com.job.barbershop">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_round"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".SummaryActivity"></activity>
-        <activity android:name=".CutsActivity"></activity>
-        <activity android:name=".payment.PayDoneActivity"></activity>
-        <activity android:name=".payment.CardDetailsActivity"></activity>
-        <activity android:name=".payment.PayWithCardActivity"></activity>
-        <activity android:name=".SelectServiceActivity"></activity>
-        <activity android:name=".BookingDetailsActivity"></activity>
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".ChooseLocationActivity"></activity>
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher_round"
+            android:name=".App"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".SummaryActivity" />
+        <activity android:name=".CutsActivity" />
+        <activity android:name=".payment.PayDoneActivity" />
+        <activity android:name=".payment.CardDetailsActivity" />
+        <activity android:name=".payment.PayWithCardActivity" />
+        <activity android:name=".SelectServiceActivity" />
+        <activity android:name=".BookingDetailsActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ChooseLocationActivity" />
         <activity android:name=".MainActivity" />
         <activity
-            android:name=".SplashActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/SplashTheme">
+                android:name=".SplashActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -36,8 +38,8 @@
         <activity android:name=".payment.ShoppingCheckoutStep" />
 
         <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

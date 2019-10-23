@@ -4,9 +4,8 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 
-class BookingDetailsActivity : AppCompatActivity() {
+class BookingDetailsActivity : BaseActivity() {
 
     companion object {
         fun newIntent(context: Context): Intent =

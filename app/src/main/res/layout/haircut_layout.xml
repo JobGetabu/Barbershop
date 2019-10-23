@@ -4,6 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        tools:context=".CutsActivity"
         android:orientation="vertical">
 
     <LinearLayout
@@ -76,11 +77,12 @@
                     app:layout_constraintTop_toBottomOf="@id/textView22" />
 
             <Button
-                    android:id="@+id/button"
+                    android:id="@+id/gentlemancut"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:text="Add"
+                    android:onClick="addClick"
                     app:layout_constraintBottom_toTopOf="@+id/view3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/textView19" />
@@ -148,11 +150,12 @@
                     app:layout_constraintTop_toBottomOf="@id/textView22" />
 
             <Button
-                    android:id="@+id/button"
+                    android:id="@+id/mustache"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:text="Add"
+                    android:onClick="addClick"
                     app:layout_constraintBottom_toTopOf="@+id/view3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/textView19" />
