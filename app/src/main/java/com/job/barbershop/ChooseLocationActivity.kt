@@ -19,6 +19,6 @@ class ChooseLocationActivity : AppCompatActivity() {
     }
 
     fun toCut(v: View){
-        startActivity(SelectServiceActivity.newIntent(this))
+        startActivity(CutsActivity.newIntent(this))
     }
 }

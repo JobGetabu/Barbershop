@@ -22,4 +22,10 @@ class SummaryActivity : AppCompatActivity() {
         onBackPressed()
         finish()
     }
+
+    fun toCheckout(v:View){
+        var intent = Intent(this,SelectServiceActivity::class.java)
+        startActivity(intent)
+
+    }
 }
