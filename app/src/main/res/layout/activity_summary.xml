@@ -1,269 +1,272 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SummaryActivity">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SummaryActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="?actionBarSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/colorPrimary">
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="24dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            android:background="@android:color/transparent"
-            android:tint="@android:color/white"
-            android:onClick="close"
-            app:layout_constraintBottom_toBottomOf="@+id/textView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_arrow_back" />
-
-        <TextView
-            android:id="@+id/textView"
+            android:id="@+id/toolbar"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_medium"
-            android:padding="16dp"
-            android:text="SUMMARY"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="24dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:background="@android:color/transparent"
+                android:onClick="close"
+                android:tint="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_arrow_back" />
+
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="16dp"
+                android:text="SUMMARY"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
-        android:id="@+id/topview"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="fitXY"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/logo_white" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:fontFamily="@font/roboto_bold"
-            android:text="The Cut"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/roboto_bold"
-            android:onClick="toLocation"
-            android:text="location"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/topview"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="32dp"
-            android:fontFamily="@font/roboto_bold"
-            android:text="Dedan Kimathi, Nyeri"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toStartOf="@+id/textView3"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:fontFamily="@font/roboto_bold"
-            android:text="Operating Hours"
-            android:textColor="@color/white"
-            android:textSize="14sp"
+            android:background="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo_white" />
 
         <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/roboto_bold"
-            android:text="Today- 8:00 AM to 10:00 PM - Show Timings"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="The Cut"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:onClick="toLocation"
+                android:text="location"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Dedan Kimathi, Nyeri"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Operating Hours"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Today- 8:00 AM to 10:00 PM - Show Timings"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
         <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="18dp"
-            android:layout_height="18dp"
-            android:layout_marginEnd="4dp"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/def_cd"
-            android:onClick="toLocation"
-            android:scaleType="fitCenter"
-            android:tint="@color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/textView3"
-            app:layout_constraintEnd_toStartOf="@+id/textView3"
-            app:layout_constraintTop_toTopOf="@+id/textView3"
-            app:srcCompat="@drawable/ic_ball_pen" />
+                android:id="@+id/imageButton"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="4dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/def_cd"
+                android:onClick="toLocation"
+                android:scaleType="fitCenter"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                app:layout_constraintEnd_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="@+id/textView3"
+                app:srcCompat="@drawable/ic_ball_pen" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
-        app:layout_constraintTop_toBottomOf="@id/topview"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topview">
 
         <androidx.core.widget.NestedScrollView
-            android:id="@+id/nested_scroll_view"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:scrollbars="none"
-            android:scrollingCache="true">
+                android:id="@+id/nested_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="none"
+                android:scrollingCache="true">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/spacing_smlarge"
-                    android:layout_marginRight="@dimen/spacing_smlarge"
-                    app:cardBackgroundColor="@android:color/white"
-                    app:cardCornerRadius="2dp"
-                    app:cardElevation="2dp"
-                    app:cardUseCompatPadding="true">
-
-                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:clickable="true"
-                        android:orientation="horizontal">
+                        android:layout_marginLeft="@dimen/spacing_smlarge"
+                        android:layout_marginRight="@dimen/spacing_smlarge"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true">
 
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
                             android:orientation="horizontal">
 
-                            <LinearLayout
+                        <LinearLayout
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:orientation="vertical"
-                                android:padding="@dimen/spacing_large">
+                                android:orientation="horizontal">
 
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Gentlemen's cut"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                                    android:textColor="@color/grey_90"
-                                    app:fontFamily="sans-serif-medium" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Ksh 200"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                                    android:textColor="@color/colorPrimary" />
-
-                                <View
+                            <LinearLayout
                                     android:layout_width="0dp"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1" />
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:gravity="center_vertical"
-                                    android:orientation="horizontal">
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/spacing_large">
 
-                                    <ImageButton
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="@dimen/spacing_xlarge"
-                                        android:background="?attr/selectableItemBackgroundBorderless"
-                                        android:tint="@color/grey_40"
-                                        app:srcCompat="@drawable/ic_remove" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
+                                <TextView
+                                        android:id="@+id/tv1"
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginLeft="@dimen/spacing_large"
-                                        android:layout_marginRight="@dimen/spacing_large"
-                                        android:gravity="center_vertical"
-                                        android:text="01"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                                        android:textColor="@color/grey_40"
+                                        android:text="Gentlemen's cut"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                        android:textColor="@color/grey_90"
                                         app:fontFamily="sans-serif-medium" />
 
-                                    <ImageButton
+                                <TextView
+                                        android:id="@+id/price1"
                                         android:layout_width="wrap_content"
-                                        android:layout_height="@dimen/spacing_xlarge"
-                                        android:background="?attr/selectableItemBackgroundBorderless"
-                                        android:tint="@color/grey_40"
-                                        app:srcCompat="@drawable/ic_add" />
+                                        android:layout_height="wrap_content"
+                                        android:text="Ksh 200"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                        android:textColor="@color/colorPrimary" />
+
+                                <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1" />
+
+                                <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                    <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="@dimen/spacing_xlarge"
+                                            android:background="?attr/selectableItemBackgroundBorderless"
+                                            android:tint="@color/grey_40"
+                                            app:srcCompat="@drawable/ic_remove" />
+
+                                    <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/spacing_large"
+                                            android:layout_marginRight="@dimen/spacing_large"
+                                            android:gravity="center_vertical"
+                                            android:text="01"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                            android:textColor="@color/grey_40"
+                                            app:fontFamily="sans-serif-medium" />
+
+                                    <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="@dimen/spacing_xlarge"
+                                            android:background="?attr/selectableItemBackgroundBorderless"
+                                            android:tint="@color/grey_40"
+                                            app:srcCompat="@drawable/ic_add" />
 
                                 </LinearLayout>
 
@@ -272,95 +275,97 @@
                         </LinearLayout>
 
                         <ImageView
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/im1" />
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/im1" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/spacing_smlarge"
-                    android:layout_marginRight="@dimen/spacing_smlarge"
-                    android:layout_marginTop="@dimen/spacing_medium"
-                    app:cardBackgroundColor="@android:color/white"
-                    app:cardCornerRadius="2dp"
-                    app:cardElevation="2dp"
-                    app:cardUseCompatPadding="true">
-
-                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:clickable="true"
-                        android:orientation="horizontal">
+                        android:layout_marginLeft="@dimen/spacing_smlarge"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:layout_marginRight="@dimen/spacing_smlarge"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true">
 
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
                             android:orientation="horizontal">
 
-                            <LinearLayout
+                        <LinearLayout
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:orientation="vertical"
-                                android:padding="@dimen/spacing_large">
+                                android:orientation="horizontal">
 
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Colour Shading"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                                    android:textColor="@color/grey_90"
-                                    app:fontFamily="sans-serif-medium" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Ksh 500"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                                    android:textColor="@color/colorPrimary" />
-
-                                <View
+                            <LinearLayout
                                     android:layout_width="0dp"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1" />
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:gravity="center_vertical"
-                                    android:orientation="horizontal">
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/spacing_large">
 
-                                    <ImageButton
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="@dimen/spacing_xlarge"
-                                        android:background="?attr/selectableItemBackgroundBorderless"
-                                        android:tint="@color/grey_40"
-                                        app:srcCompat="@drawable/ic_remove" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
+                                <TextView
+                                        android:id="@+id/tv2"
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginLeft="@dimen/spacing_large"
-                                        android:layout_marginRight="@dimen/spacing_large"
-                                        android:gravity="center_vertical"
-                                        android:text="01"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                                        android:textColor="@color/grey_40"
+                                        android:text="Colour Shading"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                        android:textColor="@color/grey_90"
                                         app:fontFamily="sans-serif-medium" />
 
-                                    <ImageButton
+                                <TextView
+                                        android:id="@+id/price2"
                                         android:layout_width="wrap_content"
-                                        android:layout_height="@dimen/spacing_xlarge"
-                                        android:background="?attr/selectableItemBackgroundBorderless"
-                                        android:tint="@color/grey_40"
-                                        app:srcCompat="@drawable/ic_add" />
+                                        android:layout_height="wrap_content"
+                                        android:text="Ksh 500"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                        android:textColor="@color/colorPrimary" />
+
+                                <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1" />
+
+                                <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                    <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="@dimen/spacing_xlarge"
+                                            android:background="?attr/selectableItemBackgroundBorderless"
+                                            android:tint="@color/grey_40"
+                                            app:srcCompat="@drawable/ic_remove" />
+
+                                    <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/spacing_large"
+                                            android:layout_marginRight="@dimen/spacing_large"
+                                            android:gravity="center_vertical"
+                                            android:text="01"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                            android:textColor="@color/grey_40"
+                                            app:fontFamily="sans-serif-medium" />
+
+                                    <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="@dimen/spacing_xlarge"
+                                            android:background="?attr/selectableItemBackgroundBorderless"
+                                            android:tint="@color/grey_40"
+                                            app:srcCompat="@drawable/ic_add" />
 
                                 </LinearLayout>
 
@@ -369,95 +374,95 @@
                         </LinearLayout>
 
                         <ImageView
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/im2" />
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/im2" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/spacing_smlarge"
-                    android:layout_marginRight="@dimen/spacing_smlarge"
-                    android:layout_marginTop="@dimen/spacing_medium"
-                    app:cardBackgroundColor="@android:color/white"
-                    app:cardCornerRadius="2dp"
-                    app:cardElevation="2dp"
-                    app:cardUseCompatPadding="true">
-
-                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:clickable="true"
-                        android:orientation="horizontal">
+                        android:layout_marginLeft="@dimen/spacing_smlarge"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:layout_marginRight="@dimen/spacing_smlarge"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true">
 
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
                             android:orientation="horizontal">
 
-                            <LinearLayout
+                        <LinearLayout
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:orientation="vertical"
-                                android:padding="@dimen/spacing_large">
+                                android:orientation="horizontal">
 
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Hair Conditioning"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                                    android:textColor="@color/grey_90"
-                                    app:fontFamily="sans-serif-medium" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Free"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                                    android:textColor="@color/colorPrimary" />
-
-                                <View
+                            <LinearLayout
                                     android:layout_width="0dp"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1" />
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:gravity="center_vertical"
-                                    android:orientation="horizontal">
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/spacing_large">
 
-                                    <ImageButton
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="@dimen/spacing_xlarge"
-                                        android:background="?attr/selectableItemBackgroundBorderless"
-                                        android:tint="@color/grey_40"
-                                        app:srcCompat="@drawable/ic_remove" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
+                                <TextView
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginLeft="@dimen/spacing_large"
-                                        android:layout_marginRight="@dimen/spacing_large"
-                                        android:gravity="center_vertical"
-                                        android:text="01"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                                        android:textColor="@color/grey_40"
+                                        android:text="Hair Conditioning"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                        android:textColor="@color/grey_90"
                                         app:fontFamily="sans-serif-medium" />
 
-                                    <ImageButton
+                                <TextView
                                         android:layout_width="wrap_content"
-                                        android:layout_height="@dimen/spacing_xlarge"
-                                        android:background="?attr/selectableItemBackgroundBorderless"
-                                        android:tint="@color/grey_40"
-                                        app:srcCompat="@drawable/ic_add" />
+                                        android:layout_height="wrap_content"
+                                        android:text="Free"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                        android:textColor="@color/colorPrimary" />
+
+                                <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1" />
+
+                                <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                    <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="@dimen/spacing_xlarge"
+                                            android:background="?attr/selectableItemBackgroundBorderless"
+                                            android:tint="@color/grey_40"
+                                            app:srcCompat="@drawable/ic_remove" />
+
+                                    <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/spacing_large"
+                                            android:layout_marginRight="@dimen/spacing_large"
+                                            android:gravity="center_vertical"
+                                            android:text="01"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                            android:textColor="@color/grey_40"
+                                            app:fontFamily="sans-serif-medium" />
+
+                                    <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="@dimen/spacing_xlarge"
+                                            android:background="?attr/selectableItemBackgroundBorderless"
+                                            android:tint="@color/grey_40"
+                                            app:srcCompat="@drawable/ic_add" />
 
                                 </LinearLayout>
 
@@ -466,10 +471,10 @@
                         </LinearLayout>
 
                         <ImageView
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/image_shop_2" />
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/image_shop_2" />
 
                     </LinearLayout>
 
@@ -480,59 +485,60 @@
         </androidx.core.widget.NestedScrollView>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="@dimen/spacing_middle"
-            android:paddingBottom="@dimen/spacing_medium"
-            android:paddingLeft="@dimen/spacing_mlarge"
-            android:paddingRight="@dimen/spacing_mlarge">
-
-            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/spacing_middle"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/spacing_mlarge"
+                android:paddingTop="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_mlarge"
+                android:paddingBottom="@dimen/spacing_medium">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_middle"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Total Amount"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:textColor="@color/grey_80"
-                    app:fontFamily="sans-serif-medium" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_80"
+                        app:fontFamily="sans-serif-medium" />
 
                 <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ksh 700"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/colorPrimary"
-                    android:textStyle="bold" />
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ksh 700"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
 
             </LinearLayout>
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/grey_20" />
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_20" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_medium"
-                android:background="@color/colorPrimary"
-                android:paddingLeft="@dimen/spacing_mlarge"
-                android:paddingRight="@dimen/spacing_mlarge"
-                android:onClick="toCheckout"
-                android:text="CONTINUE"
-                android:textColor="@android:color/white" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:background="@color/colorPrimary"
+                    android:onClick="toCheckout"
+                    android:paddingLeft="@dimen/spacing_mlarge"
+                    android:paddingRight="@dimen/spacing_mlarge"
+                    android:text="CONTINUE"
+                    android:textColor="@android:color/white" />
 
         </LinearLayout>
 

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
@@ -13,126 +12,125 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/logo_white"
-                android:id="@+id/imageView"
-                app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="16dp"/>
+                app:srcCompat="@drawable/logo_white" />
 
         <TextView
                 android:id="@+id/textView2"
-                android:text="The Cut"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:textSize="16sp"
-                android:textColor="@color/white"
                 android:fontFamily="@font/roboto_bold"
-                app:layout_constraintTop_toTopOf="parent"/>
+                android:text="The Cut"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
                 android:id="@+id/textView3"
-                android:text="location"
-                android:onClick="toLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView2"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:textSize="14sp"
-                android:textColor="@color/white"
-                android:fontFamily="@font/roboto_bold"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
-                app:layout_constraintVertical_bias="0.0"
-                android:layout_marginEnd="16dp"/>
+                android:fontFamily="@font/roboto_bold"
+                android:onClick="toLocation"
+                android:text="location"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.0" />
 
         <TextView
                 android:id="@+id/textView7"
-                android:text="Dedan Kimathi, Nyeri"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView2"
                 android:layout_marginStart="8dp"
-                android:textSize="14sp"
-                android:textColor="@color/white"
-                android:fontFamily="@font/roboto_bold"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Dedan Kimathi, Nyeri"
+                android:textColor="@color/white"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toStartOf="@+id/textView3"
-                app:layout_constraintHorizontal_bias="0.0"/>
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <TextView
                 android:id="@+id/textView12"
-                android:text="Operating Hours"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:textSize="14sp"
-                android:textColor="@color/white"
-                android:fontFamily="@font/roboto_bold"
-                android:layout_marginEnd="8dp"
                 android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Operating Hours"
+                android:textColor="@color/white"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <TextView
                 android:id="@+id/textView13"
-                android:text="Today- 8:00 AM to 10:00 PM - Show Timings"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:textSize="14sp"
-                android:textColor="@color/white"
-                android:fontFamily="@font/roboto_bold"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Today- 8:00 AM to 10:00 PM - Show Timings"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView12"
-                android:layout_marginBottom="16dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
         <ImageButton
+                android:id="@+id/imageButton"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                app:srcCompat="@drawable/ic_ball_pen"
-                android:onClick="toLocation"
-                android:id="@+id/imageButton"
-                android:tint="@color/white"
-                android:scaleType="fitCenter"
+                android:layout_marginEnd="4dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/def_cd"
-                app:layout_constraintTop_toTopOf="@+id/textView3"
+                android:onClick="toLocation"
+                android:scaleType="fitCenter"
+                android:tint="@color/white"
                 app:layout_constraintBottom_toBottomOf="@+id/textView3"
                 app:layout_constraintEnd_toStartOf="@+id/textView3"
-                android:layout_marginEnd="4dp"/>
+                app:layout_constraintTop_toTopOf="@+id/textView3"
+                app:srcCompat="@drawable/ic_ball_pen" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.core.widget.NestedScrollView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintTop_toBottomOf="@id/topview"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@id/next"
-            >
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topview">
 
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -140,176 +138,175 @@
 
             <TextView
                     android:id="@+id/textView9"
-                    android:text="SELECT STAFF"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginStart="16dp"
-                    android:fontFamily="@font/roboto_bold"
-                    android:textSize="16sp"
-                    android:textColor="@color/colorAccent"
                     android:layout_marginTop="16dp"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="SELECT STAFF"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                     android:id="@+id/textView14"
-                    android:text="SELECT DATE"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:textSize="16sp"
+                    android:text="SELECT DATE"
                     android:textColor="@color/colorAccent"
-                    app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-                    android:layout_marginTop="16dp"/>
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
             <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/date"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/textView14"
-                    android:layout_marginTop="8dp"
-                    app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginEnd="16dp"
                     android:clickable="true"
                     android:onClick="showCalenderPicker"
-                    app:layout_constraintEnd_toEndOf="parent">
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14">
 
                 <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="none"
-                        android:focusable="false"
                         android:clickable="true"
-                        android:onClick="showCalenderPicker"
                         android:drawableStart="@drawable/ic_date"
-                        android:drawableTint="@color/grey_60"
                         android:drawablePadding="16dp"
-                        android:hint="@string/select_date"/>
+                        android:drawableTint="@color/grey_60"
+                        android:focusable="false"
+                        android:hint="@string/select_date"
+                        android:inputType="none"
+                        android:onClick="showCalenderPicker" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                     android:id="@+id/textView15"
-                    android:text="SELECT TIME"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:textSize="16sp"
+                    android:text="SELECT TIME"
                     android:textColor="@color/colorAccent"
-                    app:layout_constraintTop_toBottomOf="@+id/date"
-                    android:layout_marginTop="16dp"/>
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/date" />
 
             <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/time"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/textView15"
-                    android:layout_marginTop="8dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:layout_marginBottom="16dp"
                     android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginEnd="16dp"
-                    android:focusable="true"
+                    android:layout_marginBottom="16dp"
                     android:clickable="true"
+                    android:focusable="true"
                     android:onClick="showDatePicker"
-                    app:layout_constraintEnd_toEndOf="parent">
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15">
 
                 <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="none"
-                        android:focusable="false"
                         android:clickable="true"
-                        android:onClick="showDatePicker"
                         android:drawableStart="@drawable/ic_time"
-                        android:drawableTint="@color/grey_60"
                         android:drawablePadding="16dp"
-                        android:hint="@string/select_time"/>
+                        android:drawableTint="@color/grey_60"
+                        android:focusable="false"
+                        android:hint="@string/select_time"
+                        android:inputType="none"
+                        android:onClick="showDatePicker" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <RadioGroup
+                    android:id="@+id/radioGroup"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/textView9"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginEnd="16dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:orientation="vertical"
+                    android:layout_marginEnd="16dp"
                     android:gravity="start"
-                    android:id="@+id/radioGroup">
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9">
 
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:padding="8dp"
                         android:text="No preference"
-                        android:checked="false"
-                        android:textSize="16sp"
-                        android:padding="8dp"
-                        />
+                        android:textSize="16sp" />
 
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:padding="8dp"
                         android:text="Fally"
-                        android:checked="false"
-                        android:textSize="16sp"
-                        android:padding="8dp"/>
+                        android:textSize="16sp" />
 
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="George"
                         android:checked="false"
-                        android:textSize="16sp"
-                        android:padding="8dp"/>
-
-                <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Ken"
-                        android:checked="false"
-                        android:textSize="16sp"
-                        android:padding="8dp"/>
-
-                <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Evans"
-                        android:checked="false"
-                        android:textSize="16sp"
-                        android:padding="8dp"/>
-
-                <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bakery"
-                        android:checked="false"
-                        android:textSize="16sp"
-                        android:padding="8dp"/>
-
-                <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Lawrence"
-                        android:checked="false"
-                        android:textSize="16sp"
-                        android:padding="8dp"/>
-
-
-                <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Lukip"
-                        android:textSize="16sp"
                         android:padding="8dp"
-                        android:checked="false"/>
+                        android:text="George"
+                        android:textSize="16sp" />
+
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:padding="8dp"
+                        android:text="Ken"
+                        android:textSize="16sp" />
+
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:padding="8dp"
+                        android:text="Evans"
+                        android:textSize="16sp" />
+
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:padding="8dp"
+                        android:text="Bakery"
+                        android:textSize="16sp" />
+
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:padding="8dp"
+                        android:text="Lawrence"
+                        android:textSize="16sp" />
+
+
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:padding="8dp"
+                        android:text="Lukip"
+                        android:textSize="16sp" />
 
 
             </RadioGroup>
@@ -323,20 +320,20 @@
             android:id="@+id/next"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/btn_rounded_default"
             android:padding="16dp"
+            android:shadowColor="#FFFFFF"
             android:text="Continue"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:shadowColor="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="32dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="32dp"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="16dp"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
