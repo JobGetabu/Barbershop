@@ -26,7 +26,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/roboto_medium"
-                    android:text="Gentlemen's cut"
+                    android:text="Lux Pedicure"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +58,7 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="Ksh 500"
+                    android:text="Ksh 700"
                     android:textColor="@color/colorAccent"
                     app:layout_constraintStart_toEndOf="@+id/textView21"
                     app:layout_constraintTop_toBottomOf="@+id/textView19" />
@@ -98,7 +98,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/roboto_medium"
-                    android:text="Beard/ Mustache Trim"
+                    android:text="Lux Manicure"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +109,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="35 mins"
+                    android:text="1 Hr"
                     app:layout_constraintTop_toBottomOf="@+id/textView19"
                     tools:layout_editor_absoluteX="15dp" />
 
@@ -130,7 +130,7 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="Ksh 350"
+                    android:text="Ksh 200"
                     android:textColor="@color/colorAccent"
                     app:layout_constraintStart_toEndOf="@+id/textView21"
                     app:layout_constraintTop_toBottomOf="@+id/textView19" />
@@ -158,7 +158,6 @@
                     app:layout_constraintTop_toTopOf="@+id/textView19" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
