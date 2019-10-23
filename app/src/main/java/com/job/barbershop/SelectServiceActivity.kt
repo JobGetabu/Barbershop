@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
+import android.widget.RadioButton
 import com.job.barbershop.payment.ShoppingCheckoutStep
 import com.job.barbershop.util.Tools
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog
@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.activity_select_service.*
 import java.util.*
 
 
-class SelectServiceActivity : AppCompatActivity() {
+class SelectServiceActivity : BaseActivity() {
 
     companion object {
         fun newIntent(context: Context): Intent =
@@ -27,6 +27,9 @@ class SelectServiceActivity : AppCompatActivity() {
         next.setOnClickListener {
             toCheckOut()
         }
+
+        textView7.text = tm.pickedLocation
+
     }
 
     fun showCalenderPicker(v: View){
@@ -42,6 +45,8 @@ class SelectServiceActivity : AppCompatActivity() {
 
 
                 date.editText!!.setText(Tools.getFormattedDateSimple(date_ship_millis))
+
+                tm.selectedDate = Tools.getFormattedDateSimple(date_ship_millis)
             },
             cur_calender.get(Calendar.YEAR),
             cur_calender.get(Calendar.MONTH),
@@ -61,6 +66,8 @@ class SelectServiceActivity : AppCompatActivity() {
         val datePicker = TimePickerDialog.newInstance({ _, hourOfDay, minute, second ->
 
             time.editText!!.setText("$hourOfDay : $minute")
+
+            tm.selectedTime = "$hourOfDay : $minute"
         },
 
             cur_calender.get(Calendar.HOUR_OF_DAY), cur_calender.get(Calendar.MINUTE),
@@ -72,6 +79,15 @@ class SelectServiceActivity : AppCompatActivity() {
     }
 
     fun toCheckOut(){
+
+        val rd = findViewById<RadioButton>(radioGroup.checkedRadioButtonId).text.toString()
+        tm.selectedStuff = rd
+
+        if (tm.selectedDate == null || tm.selectedDate!!.isEmpty()){
+            showSnack("Select at least two services!")
+            return
+        }
+
         startActivity(Intent(this,ShoppingCheckoutStep::class.java))
     }
 

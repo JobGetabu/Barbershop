@@ -47,6 +47,7 @@
                 android:text="Visa Express" />
 
             <EditText
+                    android:id="@+id/cardNum"
                 style="@style/EditText.Flat.Grey"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

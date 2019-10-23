@@ -62,6 +62,11 @@ class CutsActivity : BaseActivity() {
 
     fun toSelectService(v: View) {
 
+        if (cutServices.size > 0 && cutServices.size < 1){
+            showSnack("Select at least two services!")
+            return
+        }
+
         val intent = Intent(this, SummaryActivity::class.java)
         intent.putParcelableArrayListExtra("sss", cutServices as ArrayList)
         startActivity(intent)
@@ -99,10 +104,6 @@ class CutsActivity : BaseActivity() {
 
             R.id.mani -> cutServices.add(CutService(name = "Lux Manicure",price = 200,time = "1 Hr"))
 
-        }
-
-        cutServices.forEach {
-            Log.d(TAG, "===>"+it.toString())
         }
 
         next.text = "CONTINUE - ADDED (${cutServices.size})"

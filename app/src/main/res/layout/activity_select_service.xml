@@ -308,12 +308,9 @@
                         android:text="Lukip"
                         android:textSize="16sp" />
 
-
             </RadioGroup>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
     </androidx.core.widget.NestedScrollView>
 
     <Button
