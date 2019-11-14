@@ -67,6 +67,9 @@ class CutsActivity : BaseActivity() {
             return
         }
 
+        tm.cutService1 = cutServices[0]
+        tm.cutService2 = cutServices[1]
+
         val intent = Intent(this, SummaryActivity::class.java)
         intent.putParcelableArrayListExtra("sss", cutServices as ArrayList)
         startActivity(intent)

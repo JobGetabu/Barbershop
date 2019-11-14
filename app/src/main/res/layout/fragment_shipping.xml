@@ -22,6 +22,7 @@
                 app:fontFamily="sans-serif-medium"/>
 
         <EditText
+                android:id="@+id/name"
                 style="@style/EditText.Flat.Grey"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -32,6 +33,7 @@
                 tools:text="Laura Michelle"/>
 
         <EditText
+                android:id="@+id/email"
                 style="@style/EditText.Flat.Grey"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -42,6 +44,7 @@
                 tools:text="laura.michelle@mail.com"/>
 
         <EditText
+                android:id="@+id/phone"
                 style="@style/EditText.Flat.Grey"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -61,6 +64,7 @@
                 app:fontFamily="sans-serif-medium"/>
 
         <EditText
+                android:id="@+id/address"
                 style="@style/EditText.Flat.Grey"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -77,6 +81,7 @@
                 android:orientation="horizontal">
 
             <EditText
+                    android:id="@+id/county"
                     style="@style/EditText.Flat.Grey"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -95,6 +100,7 @@
         </LinearLayout>
 
         <EditText
+                android:id="@+id/street"
                 style="@style/EditText.Flat.Grey"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -106,6 +112,7 @@
                 android:minHeight="@dimen/spacing_xmlarge"/>
 
         <EditText
+                android:id="@+id/houseNo"
                 style="@style/EditText.Flat.Grey"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

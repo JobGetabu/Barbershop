@@ -35,7 +35,69 @@ class FragmentConfirmation : Fragment() {
         maname.text = tm.myDetails?.name
         address.text = tm.myDetails?.address
 
-        sel1.text = tm.selectedStuff
+        sel1.text = tm.cutService1?.name
+        sel1price.text = "Ksh ${tm.cutService1?.price}"
 
+        sel2.text = tm.cutService2?.name
+        sel2price.text = "Ksh ${tm.cutService2?.price}"
+
+        val tt = (tm.cutService1!!.price) + tm.cutService1!!.price
+        subtotal.text = "Ksh ${tt}"
+        val ttt = tt + 20
+        total.text = "Ksh " + (ttt)
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (!getUserVisibleHint())
+        {
+            return;
+        }
+        cardno.text = tm.card?.number
+        maname.text = tm.myDetails?.name
+        address.text = tm.myDetails?.address
+
+        sel1.text = tm.cutService1?.name
+        sel1price.text = "Ksh ${tm.cutService1?.price}"
+
+        sel2.text = tm.cutService2?.name
+        sel2price.text = "Ksh ${tm.cutService2?.price}"
+
+        val tt = (tm.cutService1!!.price) + tm.cutService1!!.price
+        subtotal.text = "Ksh ${tt}"
+        val ttt = tt + 20
+        total.text = "Ksh " + (ttt)
+    }
+
+    override fun onPause() {
+        super.onPause()
+
+        cardno.text = tm.card?.number
+        maname.text = tm.myDetails?.name
+        address.text = tm.myDetails?.address
+
+        sel1.text = tm.cutService1?.name
+        sel1price.text = "Ksh ${tm.cutService1?.price}"
+
+        sel2.text = tm.cutService2?.name
+        sel2price.text = "Ksh ${tm.cutService2?.price}"
+
+        val tt = (tm.cutService1!!.price) + tm.cutService1!!.price
+        subtotal.text = "Ksh ${tt}"
+        val ttt = tt + 20
+        total.text = "Ksh " + (ttt)
+
+    }
+
+    override fun setUserVisibleHint(isVisibleToUser: Boolean) {
+        super.setUserVisibleHint(isVisibleToUser)
+
+        if (isVisibleToUser && isResumed())
+        {
+            //Only manually call onResume if fragment is already visible
+            //Otherwise allow natural fragment lifecycle to call onResume
+            onResume()
+        }
     }
 }

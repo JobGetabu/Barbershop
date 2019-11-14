@@ -199,6 +199,7 @@
                         </LinearLayout>
 
                         <TextView
+                                android:id="@+id/sel1price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Ksh 200.00"
@@ -245,6 +246,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                    android:id="@+id/sel2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Mustache Cut Base"
@@ -263,6 +265,7 @@
                         </LinearLayout>
 
                         <TextView
+                                android:id="@+id/sel2price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Ksh 500.00"
@@ -426,6 +429,7 @@
                 app:fontFamily="sans-serif-medium" />
 
             <TextView
+                    android:id="@+id/subtotal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ksh700.00"
@@ -456,6 +460,7 @@
                 app:fontFamily="sans-serif-medium" />
 
             <TextView
+                    android:id="@+id/total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ksh720.00"
