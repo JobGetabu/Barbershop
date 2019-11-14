@@ -43,6 +43,7 @@
             </LinearLayout>
 
             <TextView
+                    android:id="@+id/maname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_middle"
@@ -52,6 +53,7 @@
                 app:fontFamily="sans-serif-medium" />
 
             <TextView
+                    android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tamaal, RM 8, Dedan Kimathi"
@@ -98,6 +100,7 @@
             </LinearLayout>
 
             <TextView
+                    android:id="@+id/cardno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_middle"
@@ -177,7 +180,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/textView"
+                                android:id="@+id/sel1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Hair Smooth Cut"

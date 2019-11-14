@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.job.barbershop.MainActivity.Companion.tm
 import com.job.barbershop.R
+import kotlinx.android.synthetic.main.fragment_confirmation.*
 
 class FragmentConfirmation : Fragment() {
 
@@ -28,5 +30,12 @@ class FragmentConfirmation : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         edit_pay!!.setOnClickListener {}
+
+        cardno.text = tm.card?.number
+        maname.text = tm.myDetails?.name
+        address.text = tm.myDetails?.address
+
+        sel1.text = tm.selectedStuff
+
     }
 }

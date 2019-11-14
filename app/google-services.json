@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "498823388551",
+    "firebase_url": "https://barbershop-81bf8.firebaseio.com",
+    "project_id": "barbershop-81bf8",
+    "storage_bucket": "barbershop-81bf8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498823388551:android:2b00e5ea12136e24d1c722",
+        "android_client_info": {
+          "package_name": "com.job.barbershop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498823388551-iqsec2cha36hknja9cu8gfen6oifu1su.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.job.barbershop",
+            "certificate_hash": "b0eeb1fad7c95f6cc5584d6cbbbd409925043845"
+          }
+        },
+        {
+          "client_id": "498823388551-l7hr3bop39kt8bhfh4hsrj62jboie16o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3Lt2LS4tIi-MTioOBGJPRcw_h99Who_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498823388551-l7hr3bop39kt8bhfh4hsrj62jboie16o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

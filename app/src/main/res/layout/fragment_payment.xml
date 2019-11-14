@@ -78,6 +78,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                        android:id="@+id/expiredate"
                     style="@style/EditText.Flat.Grey"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -94,6 +95,7 @@
                     android:layout_height="0dp" />
 
                 <EditText
+                        android:id="@+id/cvv"
                     style="@style/EditText.Flat.Grey"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
