@@ -5,6 +5,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import com.job.barbershop.ChooseLocationActivity.Companion.db
+import com.job.barbershop.ChooseLocationActivity.Companion.id
 import com.job.barbershop.model.CutService
 import kotlinx.android.synthetic.main.activity_cuts.*
 
@@ -69,6 +71,27 @@ class CutsActivity : BaseActivity() {
 
         tm.cutService1 = cutServices[0]
         tm.cutService2 = cutServices[1]
+
+        val service1 = hashMapOf(
+            "userId" to id,
+            "name" to tm.myDetails?.name,
+            "name" to tm.cutService1?.name,
+            "price" to tm.cutService1?.price,
+            "time" to tm.selectedTime,
+            "date" to tm.selectedDate
+        )
+
+        val service2 = hashMapOf(
+            "userId" to id,
+            "userName" to tm.myDetails?.name,
+            "name" to tm.cutService2?.name,
+            "price" to tm.cutService2?.price,
+            "time" to tm.selectedTime,
+            "date" to tm.selectedDate
+        )
+
+        db.collection("FirstCutService").document(id).set(service1)
+        db.collection("SecondCutService").document(id).set(service2)
 
         val intent = Intent(this, SummaryActivity::class.java)
         intent.putParcelableArrayListExtra("sss", cutServices as ArrayList)

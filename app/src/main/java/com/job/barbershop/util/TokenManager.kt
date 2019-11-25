@@ -8,8 +8,12 @@ import java.util.*
 
 
 class TokenManager(private val prefs: SharedPreferences) {
-    private val editor: SharedPreferences.Editor
+    private val editor: SharedPreferences.Editor = prefs.edit()
 
+
+    var id: String?
+        get() = prefs.getString("id", null)
+        set(id) = editor.putString("id", id).apply()
 
     var pickedLocation: String?
         get() = prefs.getString("pickedLocation", null)
@@ -25,7 +29,7 @@ class TokenManager(private val prefs: SharedPreferences) {
 
     var selectedTime: String?
         get() = prefs.getString("selectedTime", null)
-        set(selectedTime) = editor.putString(selectedTime, selectedTime).apply()
+        set(selectedTime) = editor.putString("selectedTime", selectedTime).apply()
 
     var card: MyCard?
         get() = MyCard(
@@ -41,7 +45,7 @@ class TokenManager(private val prefs: SharedPreferences) {
             editor.putString("cvv", card!!.cvv).apply()
         }
 
-    var myDetails: MyDetails?
+    var myDetails: MyDetails
         get() = MyDetails(
             name = prefs.getString("name", "Lawrence Maluki")!!,
             email = prefs.getString("email", "lawmaluki@gmail.com")!!,
@@ -51,12 +55,13 @@ class TokenManager(private val prefs: SharedPreferences) {
             houseNo = prefs.getString("houseNo", "567898")!!
         )
         set(myDetails) {
-            editor.putString("number", myDetails!!.name).apply()
+            editor.putString("name", myDetails!!.name).apply()
             editor.putString("email", myDetails!!.email).apply()
             editor.putString("phone", myDetails!!.phone).apply()
             editor.putString("address", myDetails!!.address).apply()
             editor.putString("county", myDetails!!.county).apply()
             editor.putString("houseNo", myDetails!!.houseNo).apply()
+            editor.commit()
         }
 
     var cutService1: CutService?
@@ -82,10 +87,6 @@ class TokenManager(private val prefs: SharedPreferences) {
             editor.putInt("cutService2_price", v!!.price).apply()
             editor.putString("cutService2_time", v!!.time).apply()
         }
-
-    init {
-        this.editor = prefs.edit()
-    }
 
     fun DELETEALLPREFS() {
         editor.clear().apply()

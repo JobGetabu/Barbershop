@@ -123,6 +123,17 @@
                 android:hint="House No"
                 android:minHeight="@dimen/spacing_xmlarge"/>
 
+    <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_gravity="center"
+            android:text="Save Details"
+            android:textSize="14sp" />
     </LinearLayout>
+
 
 </androidx.core.widget.NestedScrollView>

@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.google.firebase.firestore.FirebaseFirestore
+import com.job.barbershop.util.TokenManager
 
 
 class BookingDetailsActivity : BaseActivity() {
@@ -27,6 +28,10 @@ class BookingDetailsActivity : BaseActivity() {
         progress.setCancelable(false) // disable dismiss by tapping outside of the dialog
         progress.show()
 
+
+        val tm: TokenManager by lazy {
+            App.instance!!.tokenManager
+        }
 
         val id = db.collection("User").document().id
 
